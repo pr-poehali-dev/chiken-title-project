@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Get online users",
+      "method": "GET",
+      "path": "/online?adminId=1",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get stats",
+      "method": "GET",
+      "path": "/stats?adminId=1",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
